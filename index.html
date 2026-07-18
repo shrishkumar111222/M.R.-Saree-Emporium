@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.R. Saree Emporium — India's Wholesale Textile House | Surat</title>
+<meta name="description" content="60+ years of wholesale textiles. Sarees, kurtis, suits & home furnishing from Kohinoor Textile Market, Surat — with branches in Varanasi, Kolkata, Ranchi & Raipur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"M.R. Saree Emporium","legalName":"M.R. Manokamna Pvt Ltd","telephone":"+91 99796 30465",
+"address":{"@type":"PostalAddress","streetAddress":"D-Block, 248 to 283, Lower Ground, Kohinoor Textile Market, Kamela Darwaja, Ring Road","addressLocality":"Surat","addressRegion":"Gujarat","postalCode":"395002","addressCountry":"IN"},
+"sameAs":["https://www.facebook.com/mrsareeemp/","https://www.instagram.com/mrsareeemporium/","https://www.youtube.com/channel/UCE9XwNT2FgpEA9UccbA29Tg"]}
+</script>
+<style>
+:root{
+  --wine:#5A1230;--wine-2:#77193F;--ink:#2C0A1B;--ink-2:#1E0712;
+  --ivory:#FBF7EF;--cream:#F1E9DA;--sand:#E7DCC6;
+  --gold:#B4903E;--gold-2:#D6BC7E;
+  --char:#2A2520;--mut:#82776B;--white:#fff;--wa:#1FA855;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Archivo',sans-serif;
+  --sh:0 24px 60px -24px rgba(30,7,18,.35);
+  --sh-sm:0 12px 34px -20px rgba(30,7,18,.35);
+  --ease:cubic-bezier(.2,.75,.25,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--char);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:500;line-height:1.08}
+.wrap{width:min(1280px,93%);margin:0 auto}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.sec{padding:5.5rem 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:2.4rem}
+.sec-head h2{font-size:clamp(2rem,3.8vw,3rem);color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.9rem 1.8rem;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:2px;border:1px solid transparent;transition:all .3s var(--ease)}
+.b-wine{background:var(--wine);color:var(--ivory)}.b-wine:hover{background:var(--ink);transform:translateY(-2px);box-shadow:var(--sh-sm)}
+.b-gold{background:var(--gold);color:#fff}.b-gold:hover{background:#997830;transform:translateY(-2px)}
+.b-line{border-color:rgba(251,247,239,.45);color:var(--ivory)}.b-line:hover{background:rgba(251,247,239,.12)}
+.b-line-d{border-color:var(--wine);color:var(--wine)}.b-line-d:hover{background:var(--wine);color:var(--ivory)}
+.b-wa{background:var(--wa);color:#fff}.b-wa:hover{background:#188A45;transform:translateY(-2px)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ticker */
+.ticker{background:var(--ink-2);color:var(--gold-2);overflow:hidden;white-space:nowrap;font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:.5rem 0}
+.ticker-track{display:inline-block;animation:tick 30s linear infinite}
+.ticker span{margin:0 1.6rem}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* header */
+header{position:sticky;top:0;z-index:200;background:rgba(251,247,239,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(180,144,62,.25)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;padding:.7rem 0}
+.hd .logo img{height:52px;width:auto;mix-blend-mode:multiply}
+nav.dsk{display:flex;gap:.2rem}
+nav.dsk>div{position:relative}
+nav.dsk a.top,nav.dsk span.top{display:block;padding:.9rem .85rem;font-size:.8rem;font-weight:600;color:var(--char);cursor:pointer;border-bottom:2px solid transparent;transition:.25s}
+nav.dsk>div:hover a.top,nav.dsk>div:hover span.top{color:var(--wine);border-color:var(--gold)}
+.drop{position:absolute;top:100%;left:0;min-width:230px;background:var(--white);box-shadow:var(--sh);border-top:2px solid var(--gold);padding:.6rem 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:.28s var(--ease)}
+nav.dsk>div:hover .drop{opacity:1;visibility:visible;transform:none}
+.drop a{display:block;padding:.5rem 1.2rem;font-size:.82rem;color:var(--char)}
+.drop a:hover{background:var(--ivory);color:var(--wine);padding-left:1.45rem}
+.icons{display:flex;align-items:center;gap:.4rem}
+.icons button{position:relative;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:var(--ink);transition:.25s}
+.icons button:hover{background:var(--cream)}
+.icons svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pip{position:absolute;top:0;right:-2px;min-width:16px;height:16px;padding:0 4px;border-radius:9px;background:var(--gold);color:#fff;font-size:.58rem;font-weight:700;display:grid;place-items:center}
+.burger{display:none}
+
+/* search overlay */
+.sov{position:fixed;inset:0;z-index:400;background:rgba(30,7,18,.55);backdrop-filter:blur(6px);display:none;padding:8vh 5% 0}
+.sov.open{display:block}
+.sbox{max-width:720px;margin:0 auto;background:var(--ivory);border-radius:6px;box-shadow:var(--sh);overflow:hidden}
+.sbox .row{display:flex;align-items:center;gap:.8rem;padding:1rem 1.2rem;border-bottom:1px solid var(--sand)}
+.sbox input{flex:1;border:none;background:none;font-size:1.05rem;font-family:var(--sans);outline:none;color:var(--char)}
+.sres{max-height:52vh;overflow-y:auto}
+.sres a{display:flex;gap:1rem;align-items:center;padding:.7rem 1.2rem;border-bottom:1px solid rgba(231,220,198,.6)}
+.sres a:hover{background:var(--cream)}
+.sres img{width:44px;height:56px;object-fit:cover;border-radius:3px}
+.sres .nm{font-size:.88rem;font-weight:600;color:var(--ink)}
+.sres .pr{font-size:.75rem;color:var(--mut)}
+.sres .empty{padding:1.4rem;text-align:center;color:var(--mut);font-size:.9rem}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(1000px 560px at 85% 0%,rgba(180,144,62,.3),transparent 60%),linear-gradient(150deg,var(--ink-2),var(--wine) 62%,#4A0F28);color:var(--ivory);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.1;background-image:radial-gradient(circle,rgba(251,247,239,.7) .7px,transparent .9px);background-size:24px 24px}
+.hgrid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;padding:5rem 0 5.5rem}
+.hcopy h1{font-size:clamp(2.7rem,5.6vw,4.7rem);margin:1rem 0 1.3rem;color:var(--ivory)}
+.hcopy h1 em{font-style:italic;color:var(--gold-2)}
+.hcopy p{max-width:52ch;color:rgba(251,247,239,.82);font-size:1.06rem;margin-bottom:2rem}
+.hcta{display:flex;gap:.8rem;flex-wrap:wrap}
+.hmeta{display:flex;gap:2.4rem;margin-top:3rem;flex-wrap:wrap}
+.hmeta div{border-left:1px solid rgba(214,188,126,.45);padding-left:.95rem}
+.hmeta b{display:block;font-family:var(--serif);font-size:1.7rem;font-weight:600;color:var(--gold-2)}
+.hmeta i{font-style:normal;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(251,247,239,.6)}
+.hvis{position:relative;height:560px}
+.hvis img{position:absolute;object-fit:cover;border-radius:4px;box-shadow:var(--sh)}
+.hvis .i1{width:62%;height:82%;right:8%;top:0;z-index:2;border:5px solid rgba(251,247,239,.1)}
+.hvis .i2{width:44%;height:56%;left:0;bottom:0;z-index:3;border:5px solid rgba(251,247,239,.14)}
+.hvis::after{content:"";position:absolute;right:-40px;top:-40px;width:280px;height:280px;border:1px solid rgba(214,188,126,.4);border-radius:50%;z-index:1}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.hcopy>*{animation:rise .9s var(--ease) both}
+.hcopy>*:nth-child(2){animation-delay:.1s}.hcopy>*:nth-child(3){animation-delay:.2s}
+.hcopy>*:nth-child(4){animation-delay:.3s}.hcopy>*:nth-child(5){animation-delay:.4s}
+.hvis img{animation:rise 1.1s var(--ease) both .3s}
+
+/* trust strip */
+.trust{background:var(--cream);border-bottom:1px solid rgba(180,144,62,.25)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.1rem 0}
+.trust div{display:flex;align-items:center;gap:.7rem;font-size:.78rem;font-weight:600;color:var(--ink)}
+.trust svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.6;flex:none}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:1rem}
+.cat{position:relative;border-radius:5px;overflow:hidden;display:flex;align-items:flex-end;padding:1.3rem;color:var(--ivory);box-shadow:var(--sh-sm);transition:transform .4s var(--ease)}
+.cat:hover{transform:translateY(-6px)}
+.cat img,.cat .pat{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.cat:hover img,.cat:hover .pat{transform:scale(1.06)}
+.cat::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,7,18,.85),rgba(30,7,18,.06) 55%);z-index:1}
+.cat .in{position:relative;z-index:2}
+.cat h3{font-size:1.35rem;color:var(--ivory)}
+.cat i{font-style:normal;font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-2)}
+.cat.tall{grid-row:span 2}
+.p1{background:repeating-linear-gradient(45deg,#6A1C3B 0 14px,#5A1230 14px 28px)}
+.p2{background:linear-gradient(140deg,#25406B,#3A5A8C)}
+.p2::after{content:"";position:absolute;inset:0;background-image:linear-gradient(45deg,rgba(214,188,126,.28) 25%,transparent 25%,transparent 75%,rgba(214,188,126,.28) 75%),linear-gradient(45deg,rgba(214,188,126,.28) 25%,transparent 25%,transparent 75%,rgba(214,188,126,.28) 75%);background-size:24px 24px;background-position:0 0,12px 12px}
+.p3{background:linear-gradient(150deg,#3E6B5E,#5C8C7C)}
+.p3::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 30% 30%,rgba(255,255,255,.28) 2px,transparent 3px);background-size:28px 28px}
+.p4{background:repeating-linear-gradient(0deg,#7A5A2E 0 16px,#8D6B3A 16px 32px)}
+
+/* shop */
+.shop-bar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1.8rem}
+.chip{padding:.55rem 1.15rem;border:1px solid rgba(180,144,62,.5);border-radius:20px;font-size:.76rem;font-weight:700;letter-spacing:.06em;color:var(--ink);background:var(--white);transition:.25s}
+.chip:hover{border-color:var(--wine)}
+.chip.on{background:var(--wine);color:var(--ivory);border-color:var(--wine)}
+.shop-bar select{margin-left:auto;padding:.55rem .9rem;border:1px solid rgba(180,144,62,.5);border-radius:3px;background:var(--white);font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{background:var(--white);border-radius:5px;overflow:hidden;box-shadow:var(--sh-sm);transition:transform .35s var(--ease),box-shadow .35s var(--ease);display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.card .ph{position:relative;aspect-ratio:3/4;overflow:hidden;cursor:pointer;background:var(--cream)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:opacity .45s var(--ease),transform .7s var(--ease)}
+.card .ph img.b{position:absolute;inset:0;opacity:0}
+.card .ph:hover img.b{opacity:1}
+.card .ph:hover img{transform:scale(1.05)}
+.card .brand{position:absolute;top:.75rem;left:.75rem;z-index:2;background:rgba(30,7,18,.82);color:var(--gold-2);font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .65rem;border-radius:2px}
+.card .heart{position:absolute;top:.65rem;right:.65rem;z-index:2;width:36px;height:36px;border-radius:50%;background:rgba(251,247,239,.94);display:grid;place-items:center;color:var(--wine);transition:.25s}
+.card .heart:hover{background:var(--wine);color:#fff}
+.card .heart.on{background:var(--wine);color:#fff}
+.card .heart svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8}
+.card .heart.on svg{fill:currentColor}
+.card .qv{position:absolute;left:0;right:0;bottom:0;z-index:2;background:rgba(30,7,18,.85);color:var(--ivory);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-align:center;padding:.7rem;transform:translateY(100%);transition:.3s var(--ease)}
+.card .ph:hover .qv{transform:none}
+.card .bd{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.card h3{font-size:1.08rem;color:var(--ink);cursor:pointer}
+.card h3:hover{color:var(--wine)}
+.card .set{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.card .pr{display:flex;align-items:baseline;gap:.5rem;margin-top:.15rem}
+.card .pr b{font-size:1.15rem;color:var(--wine)}
+.card .pr i{font-style:normal;font-size:.76rem;color:var(--mut)}
+.card .act{display:flex;gap:.5rem;margin-top:auto;padding-top:.85rem}
+.card .act .btn{flex:1;padding:.65rem .5rem;font-size:.66rem}
+
+/* b2b */
+.b2b{background:var(--ink-2);color:var(--ivory);position:relative;overflow:hidden}
+.b2b::before{content:"";position:absolute;inset:0;opacity:.07;background-image:repeating-linear-gradient(45deg,var(--gold-2) 0 1px,transparent 1px 20px)}
+.b2b .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+.b2b h2{color:var(--ivory);font-size:clamp(2rem,3.8vw,3rem)}
+.b2b .lead{color:rgba(251,247,239,.78);margin:1rem 0 1.8rem;max-width:56ch}
+.bens{display:grid;grid-template-columns:1fr 1fr;gap:.8rem 1.4rem;margin-bottom:2rem;list-style:none}
+.bens li{display:flex;gap:.6rem;font-size:.9rem;color:rgba(251,247,239,.9)}
+.bens li::before{content:"◆";color:var(--gold-2);font-size:.55rem;margin-top:.5rem}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:flex;align-items:center;gap:1.1rem;padding:.95rem 0;border-bottom:1px solid rgba(214,188,126,.22)}
+.steps li:last-child{border:none}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:1.35rem;color:var(--gold-2);min-width:2.4rem}
+.steps b{display:block;font-size:.92rem}
+.steps i{font-style:normal;font-size:.78rem;color:rgba(251,247,239,.6)}
+
+/* stats */
+.stats{background:var(--cream);border-block:1px solid rgba(180,144,62,.28)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;text-align:center;padding:3.4rem 0}
+.stats b{display:block;font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,4.4vw,3.4rem);color:var(--wine)}
+.stats b em{font-style:normal;color:var(--gold)}
+.stats i{font-style:normal;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
+
+/* branches */
+.branches{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.br{background:var(--white);border:1px solid rgba(180,144,62,.3);border-radius:5px;padding:1.5rem 1.2rem;text-align:center;transition:.3s var(--ease);position:relative}
+.br:hover{transform:translateY(-5px);box-shadow:var(--sh-sm)}
+.br .hq{position:absolute;top:.6rem;right:.6rem;background:var(--gold);color:#fff;font-size:.55rem;font-weight:700;letter-spacing:.14em;padding:.2rem .5rem;border-radius:2px}
+.br h3{font-size:1.4rem;color:var(--ink)}
+.br p{font-size:.74rem;color:var(--mut);margin:.3rem 0 .8rem}
+.br a{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--wine);border-bottom:1px solid var(--gold-2)}
+
+/* brands marquee */
+.bmq{overflow:hidden;background:var(--white);border-block:1px solid rgba(180,144,62,.22);padding:1.6rem 0}
+.bmq-track{display:inline-flex;white-space:nowrap;animation:tick 38s linear infinite}
+.bmq span{font-family:var(--serif);font-size:1.5rem;color:var(--ink);margin:0 2.2rem;opacity:.75}
+.bmq span::after{content:"✦";color:var(--gold);font-size:.8rem;margin-left:2.2rem;vertical-align:middle}
+
+/* story */
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem;align-items:center}
+.story .vis{position:relative}
+.story .vis img{border-radius:5px;box-shadow:var(--sh);aspect-ratio:4/5;object-fit:cover;width:100%}
+.story .vis::after{content:"";position:absolute;inset:-16px 16px 16px -16px;border:1px solid var(--gold-2);border-radius:5px;z-index:-1}
+.story h2{font-size:clamp(2rem,3.6vw,2.9rem);color:var(--ink);margin:.8rem 0 1.2rem}
+.story p{color:var(--mut);margin-bottom:1rem}
+.story .sig{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--wine);margin:1.3rem 0 1.7rem}
+
+/* testimonials */
+.tst{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.t{background:var(--white);border-top:3px solid var(--gold);border-radius:5px;padding:1.7rem;box-shadow:var(--sh-sm);display:flex;flex-direction:column;gap:.9rem}
+.t .st{color:var(--gold);letter-spacing:.16em}
+.t p{font-family:var(--serif);font-style:italic;font-size:1.08rem;color:var(--ink);flex:1}
+.t i{font-style:normal;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+
+/* newsletter */
+.news{background:linear-gradient(150deg,var(--wine),var(--ink-2));color:var(--ivory);text-align:center}
+.news h2{color:var(--ivory);font-size:clamp(1.8rem,3.2vw,2.5rem);margin-bottom:.5rem}
+.news p{color:rgba(251,247,239,.75);max-width:52ch;margin:0 auto 1.7rem}
+.nf{display:flex;gap:.6rem;max-width:520px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.nf input{flex:1;min-width:230px;padding:.95rem 1.1rem;border:1px solid rgba(214,188,126,.5);background:rgba(251,247,239,.08);border-radius:2px;color:var(--ivory);font-family:var(--sans)}
+.nf input::placeholder{color:rgba(251,247,239,.5)}
+.nf input:focus{outline:2px solid var(--gold-2)}
+
+/* footer */
+footer{background:var(--ink-2);color:rgba(251,247,239,.72);font-size:.85rem}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.3fr;gap:2.4rem;padding:4rem 0 3rem}
+.fg h4{font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-2);margin-bottom:1rem}
+.fg a{display:block;padding:.2rem 0;transition:.25s}
+.fg a:hover{color:var(--ivory)}
+.fbrand img{height:56px;background:var(--ivory);padding:6px;border-radius:4px}
+.fbrand p{margin-top:.9rem;max-width:34ch;color:rgba(251,247,239,.55)}
+.fbot{border-top:1px solid rgba(214,188,126,.2);padding:1.2rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.74rem;color:rgba(251,247,239,.45)}
+
+/* drawers & modals */
+.scrim{position:fixed;inset:0;z-index:300;background:rgba(30,7,18,.55);opacity:0;pointer-events:none;transition:.35s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:310;width:min(420px,92vw);background:var(--ivory);transform:translateX(100%);transition:transform .4s var(--ease);display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.drawer .dh{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.4rem;border-bottom:1px solid var(--sand)}
+.drawer .dh h3{font-size:1.5rem;color:var(--ink)}
+.drawer .x{font-size:1.7rem;color:var(--wine);line-height:1}
+.dbody{flex:1;overflow-y:auto;padding:1rem 1.4rem}
+.ci{display:flex;gap:.9rem;padding:.9rem 0;border-bottom:1px solid rgba(231,220,198,.7)}
+.ci img{width:64px;height:82px;object-fit:cover;border-radius:3px}
+.ci .n{font-size:.85rem;font-weight:600;color:var(--ink)}
+.ci .s{font-size:.7rem;color:var(--mut)}
+.ci .p{font-size:.85rem;font-weight:700;color:var(--wine);margin-top:.2rem}
+.qty{display:inline-flex;align-items:center;border:1px solid rgba(180,144,62,.5);border-radius:3px;margin-top:.4rem}
+.qty button{width:26px;height:26px;font-size:.9rem;color:var(--wine)}
+.qty b{min-width:26px;text-align:center;font-size:.78rem}
+.ci .rm{margin-left:auto;color:var(--mut);font-size:.7rem;text-decoration:underline;align-self:flex-start}
+.dfoot{border-top:1px solid var(--sand);padding:1.2rem 1.4rem;display:flex;flex-direction:column;gap:.7rem}
+.tot{display:flex;justify-content:space-between;font-weight:700;color:var(--ink)}
+.tot b{font-size:1.2rem;color:var(--wine)}
+.dempty{text-align:center;color:var(--mut);padding:3rem 1rem}
+
+/* quick view */
+.qvm{position:fixed;inset:0;z-index:320;display:none;align-items:center;justify-content:center;padding:4vh 4%}
+.qvm.on{display:flex}
+.qvc{background:var(--ivory);border-radius:6px;box-shadow:var(--sh);width:min(880px,100%);max-height:92vh;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.qvc .x{position:absolute;top:.7rem;right:.9rem;font-size:1.8rem;color:var(--wine);z-index:5}
+.qgal{padding:1.4rem;background:var(--cream)}
+.qgal .main{aspect-ratio:3/4;border-radius:4px;overflow:hidden;margin-bottom:.7rem}
+.qgal .main img{width:100%;height:100%;object-fit:cover}
+.thumbs{display:flex;gap:.5rem;overflow-x:auto}
+.thumbs img{width:56px;height:70px;object-fit:cover;border-radius:3px;cursor:pointer;border:2px solid transparent;flex:none}
+.thumbs img.on{border-color:var(--gold)}
+.qinfo{padding:2rem 1.8rem}
+.qinfo h3{font-size:1.7rem;color:var(--ink);margin:.3rem 0 .6rem}
+.qinfo .pr{font-size:1.35rem;font-weight:700;color:var(--wine)}
+.qinfo .pr i{font-style:normal;font-size:.85rem;color:var(--mut);font-weight:500}
+.spec{margin:1.2rem 0;font-size:.85rem}
+.spec div{display:flex;gap:.6rem;padding:.4rem 0;border-bottom:1px dashed rgba(180,144,62,.35)}
+.spec b{min-width:92px;color:var(--ink)}
+.spec span{color:var(--mut)}
+.qact{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem}
+.qnote{font-size:.72rem;color:var(--mut);margin-top:1rem}
+
+/* toast */
+.toasts{position:fixed;bottom:5.6rem;left:50%;transform:translateX(-50%);z-index:500;display:flex;flex-direction:column;gap:.5rem;align-items:center;pointer-events:none}
+.toast{background:var(--ink);color:var(--ivory);font-size:.8rem;font-weight:600;padding:.7rem 1.3rem;border-radius:30px;box-shadow:var(--sh-sm);animation:rise .4s var(--ease) both}
+
+/* wa float + mobile bar */
+.waf{position:fixed;right:1.1rem;bottom:5.4rem;z-index:150;width:54px;height:54px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(31,168,85,.6);transition:.3s}
+.waf:hover{transform:scale(1.08)}
+.waf svg{width:27px;height:27px;fill:#fff}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:140;display:none;background:var(--ink-2);border-top:1px solid rgba(214,188,126,.3)}
+.mbar a,.mbar button{flex:1;display:flex;flex-direction:column;align-items:center;gap:.15rem;padding:.55rem 0;color:var(--ivory);font-size:.62rem;font-weight:600;letter-spacing:.06em}
+.mbar svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7}
+.mbar .c{position:relative}
+
+/* mobile menu */
+.mnav{position:fixed;inset:0;z-index:350;pointer-events:none}
+.mnav .pn{position:absolute;top:0;right:0;bottom:0;width:min(330px,86vw);background:var(--ivory);transform:translateX(100%);transition:.4s var(--ease);padding:1.3rem;overflow-y:auto}
+.mnav.on{pointer-events:auto}
+.mnav.on .pn{transform:none}
+.mnav a.l{display:block;padding:.8rem .2rem;border-bottom:1px solid rgba(180,144,62,.22);font-weight:600;color:var(--ink)}
+.mnav details{border-bottom:1px solid rgba(180,144,62,.22)}
+.mnav summary{padding:.8rem .2rem;font-weight:600;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.mnav summary::after{content:"+";color:var(--gold)}
+.mnav details[open] summary::after{content:"–"}
+.mnav details a{display:block;padding:.5rem 1rem;font-size:.88rem;color:var(--mut)}
+
+@media(max-width:1060px){
+  nav.dsk{display:none}.burger{display:grid}
+  .hgrid{grid-template-columns:1fr;padding:3.6rem 0}
+  .hvis{height:420px;max-width:480px}
+  .cats{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .b2b .wrap{grid-template-columns:1fr;gap:2.4rem}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .branches{grid-template-columns:repeat(2,1fr)}
+  .story{grid-template-columns:1fr;gap:2.4rem}
+  .tst{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr 1fr}
+  .trust .wrap{grid-template-columns:repeat(2,1fr)}
+  .qvc{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .sec{padding:3.6rem 0}
+  .grid{grid-template-columns:1fr}
+  .branches{grid-template-columns:1fr 1fr}
+  .mbar{display:flex}
+  body{padding-bottom:56px}
+  .hd .logo img{height:42px}
+  .fg{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tick"></div></div>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#" aria-label="M.R. Saree Emporium home">
+      <img src="https://mrse.in/cdn/shop/files/logo_165x.png?v=1733138699" alt="M.R. Saree Emporium logo" width="165" height="52">
+    </a>
+    <nav class="dsk" aria-label="Primary">
+      <div><a class="top" href="#shop">Sarees</a>
+        <div class="drop"><a href="#shop">Bandhani</a><a href="#shop">Pure Silk</a><a href="#shop">Cotton Sarees</a><a href="#shop">Synthetic Sarees</a><a href="#shop">Printed Saree</a><a href="#shop">Nauvari</a><a href="#shop">Fancy</a><a href="#shop">Uniform</a></div>
+      </div>
+      <div><span class="top">Dress</span>
+        <div class="drop"><a href="#shop">Kurti</a><a href="#shop">Stitched Suits</a><a href="#shop">Dress Material</a><a href="#shop">Co-Ord Sets</a><a href="#shop">Nighty Collection</a></div>
+      </div>
+      <div><span class="top">Men</span>
+        <div class="drop"><a href="#shop">Shirts</a><a href="#shop">T-Shirts</a><a href="#shop">Kurta</a><a href="#shop">Combo Sets</a></div>
+      </div>
+      <div><span class="top">Home Furnishing</span>
+        <div class="drop"><a href="#shop">Bedsheets</a><a href="#shop">Comforters</a><a href="#shop">Bath &amp; Hand Towels</a><a href="#shop">Aasan</a></div>
+      </div>
+      <div><a class="top" href="#b2b">Start Your Business</a></div>
+      <div><a class="top" href="#branches">Stores</a></div>
+    </nav>
+    <div class="icons">
+      <button aria-label="Search" onclick="openSearch()"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <button aria-label="Wishlist" onclick="toast('Wishlist — '+wish.size+' item(s)')"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.8-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 4.5 2.5C12 6 13.5 5 15.5 5 19 5 21 8.5 20.5 12c-2 4.2-8.5 9-8.5 9z"/></svg><span class="pip" id="wishPip" hidden>0</span></button>
+      <button aria-label="Cart" onclick="openCart()"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="pip" id="cartPip" hidden>0</span></button>
+      <button class="burger" aria-label="Menu" onclick="mnav(true)"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile nav -->
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="scrim on" style="position:absolute" onclick="mnav(false)"></div>
+  <div class="pn">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem">
+      <span class="serif" style="font-size:1.3rem;color:var(--ink)">Menu</span>
+      <button class="x" style="font-size:1.6rem;color:var(--wine)" onclick="mnav(false)">×</button>
+    </div>
+    <details><summary>Sarees</summary><a href="#shop" onclick="mnav(false)">Bandhani</a><a href="#shop" onclick="mnav(false)">Pure Silk</a><a href="#shop" onclick="mnav(false)">Cotton</a><a href="#shop" onclick="mnav(false)">Synthetic</a><a href="#shop" onclick="mnav(false)">Printed · Nauvari · Fancy</a></details>
+    <details><summary>Dress</summary><a href="#shop" onclick="mnav(false)">Kurti</a><a href="#shop" onclick="mnav(false)">Stitched Suits</a><a href="#shop" onclick="mnav(false)">Dress Material</a><a href="#shop" onclick="mnav(false)">Co-Ord Sets</a></details>
+    <details><summary>Men</summary><a href="#shop" onclick="mnav(false)">Shirts</a><a href="#shop" onclick="mnav(false)">T-Shirts</a><a href="#shop" onclick="mnav(false)">Kurta</a></details>
+    <details><summary>Home Furnishing</summary><a href="#shop" onclick="mnav(false)">Bedsheets</a><a href="#shop" onclick="mnav(false)">Towels</a><a href="#shop" onclick="mnav(false)">Comforters</a></details>
+    <a class="l" href="#b2b" onclick="mnav(false)">Start Your Own Business</a>
+    <a class="l" href="#branches" onclick="mnav(false)">Our 5 Stores</a>
+    <a class="l" href="#story" onclick="mnav(false)">About Us</a>
+    <div style="display:flex;flex-direction:column;gap:.6rem;margin-top:1.2rem">
+      <a class="btn b-wine" href="#b2b" onclick="mnav(false)">Become a Buyer</a>
+      <a class="btn b-wa" href="https://wa.me/919979630465?text=Hello%20M.R.%20Saree%20Emporium%2C%20please%20share%20your%20latest%20wholesale%20catalogue." target="_blank" rel="noopener">Get Catalogue on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- search -->
+<div class="sov" id="sov" onclick="if(event.target===this)closeSearch()">
+  <div class="sbox" role="dialog" aria-label="Search products">
+    <div class="row">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A1230" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="sin" placeholder="Search bandhani, silk, kurti, brand…" oninput="doSearch(this.value)" autocomplete="off">
+      <button class="x" style="font-size:1.5rem;color:var(--wine)" onclick="closeSearch()">×</button>
+    </div>
+    <div class="sres" id="sres"></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hgrid">
+    <div class="hcopy">
+      <span class="eyebrow" style="color:var(--gold-2)">Since 60+ Years · Kohinoor Textile Market, Surat</span>
+      <h1>The Textile House<br>Behind <em>50,000+ Retailers</em></h1>
+      <p>Sarees, kurtis, suits, men's wear and home furnishing at true wholesale rates — with 5 branches across India, worldwide export, and new designs added daily.</p>
+      <div class="hcta">
+        <a class="btn b-gold" href="#shop">Shop Wholesale Sets</a>
+        <a class="btn b-line" href="#b2b">Start Your Own Business</a>
+        <a class="btn b-wa" href="https://wa.me/919979630465?text=Hello%20M.R.%20Saree%20Emporium%2C%20please%20share%20your%20latest%20wholesale%20catalogue." target="_blank" rel="noopener">Catalogue on WhatsApp</a>
+      </div>
+      <div class="hmeta">
+        <div><b>60+</b><i>Years of Trust</i></div>
+        <div><b>5</b><i>Branches in India</i></div>
+        <div><b>50K+</b><i>Retail Partners</i></div>
+      </div>
+    </div>
+    <div class="hvis" aria-hidden="true">
+      <img class="i1" src="https://mrse.in/cdn/shop/files/kimora-sindhuri-maharani-pure-soft-dola-silk-saree_Mrse_01_800x.jpg?v=1783333561" alt="" loading="eager">
+      <img class="i2" src="https://mrse.in/cdn/shop/files/BandhaniLeheriyaStripePrintChiffonSareewithDesignerLaceBorderandRunningBlouse-6PcsSet_Mrse_01_aaf70426-b42e-4309-9387-e6ba7350942d_800x.png?v=1784201974" alt="" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- trust -->
+<div class="trust">
+  <div class="wrap">
+    <div><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>100% Quality Checked Before Dispatch</div>
+    <div><svg viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="17" r="1.6"/><circle cx="18" cy="17" r="1.6"/></svg>Dispatch in 2–3 Days · All-India Delivery</div>
+    <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg>Worldwide Export Orders Accepted</div>
+    <div><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>COD &amp; Secure Payment Options</div>
+  </div>
+</div>
+
+<!-- categories -->
+<section class="sec" id="categories">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Everything Under One Roof</span><h2>Shop by Category</h2></div>
+      <a class="btn b-line-d" href="#shop">Browse Catalogue</a>
+    </div>
+    <div class="cats">
+      <a class="cat tall reveal" href="#shop" onclick="setFilter('saree')"><img loading="lazy" src="https://mrse.in/cdn/shop/collections/Saree_all.png?v=1779878806" alt="Sarees"><div class="in"><h3>Sarees</h3><i>Explore →</i></div></a>
+      <a class="cat reveal" href="#shop" onclick="setFilter('silk')"><img loading="lazy" src="https://mrse.in/cdn/shop/files/kimora-sindhuri-maharani-pure-soft-dola-silk-saree_Mrse_03_800x.jpg?v=1783333561" alt="Silk and wedding sarees"><div class="in"><h3>Silk &amp; Wedding</h3><i>Explore →</i></div></a>
+      <a class="cat reveal" href="#shop" onclick="setFilter('kurti')"><img loading="lazy" src="https://mrse.in/cdn/shop/files/cotton-short-kurti-style-vol-10_Mrse_02_800x.jpg?v=1781333927" alt="Kurtis"><div class="in"><h3>Kurtis &amp; Dress</h3><i>Explore →</i></div></a>
+      <a class="cat reveal" href="#shop" onclick="setFilter('bandhani')"><img loading="lazy" src="https://mrse.in/cdn/shop/files/BandhaniLeheriyaStripePrintChiffonSareewithDesignerLaceBorderandRunningBlouse-6PcsSet_Mrse_03_695c594f-755c-406f-b55a-8be4486c7892_800x.png?v=1784201974" alt="Bandhani sarees"><div class="in"><h3>Bandhani</h3><i>Explore →</i></div></a>
+      <a class="cat reveal" href="#"><div class="pat p2"></div><div class="in"><h3>Men's Collection</h3><i>Shirts · Kurta · Combos</i></div></a>
+      <a class="cat reveal" href="#"><div class="pat p3"></div><div class="in"><h3>Home Furnishing</h3><i>Bedsheets · Towels</i></div></a>
+      <a class="cat reveal" href="#"><div class="pat p4"></div><div class="in"><h3>Accessories</h3><i>Bags &amp; More</i></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="sec" id="shop" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Live Wholesale Catalogue · Sample Data</span><h2>Latest Wholesale Sets</h2></div>
+    </div>
+    <div class="shop-bar reveal" role="toolbar" aria-label="Filter products">
+      <button class="chip on" data-f="all" onclick="setFilter('all')">All</button>
+      <button class="chip" data-f="bandhani" onclick="setFilter('bandhani')">Bandhani</button>
+      <button class="chip" data-f="silk" onclick="setFilter('silk')">Silk &amp; Wedding</button>
+      <button class="chip" data-f="kurti" onclick="setFilter('kurti')">Kurtis</button>
+      <select id="sort" onchange="renderGrid()" aria-label="Sort">
+        <option value="feat">Featured</option>
+        <option value="lo">Price: Low → High</option>
+        <option value="hi">Price: High → Low</option>
+      </select>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- B2B -->
+<section class="b2b sec" id="b2b">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--gold-2)">Start Your Own Business</span>
+      <h2>Grow With India's Wholesale Textile Partner</h2>
+      <p class="lead">Join the 50,000+ retailers, boutiques and resellers who stock from M.R. Saree Emporium — designs that sell, margins that work, and a partner invested in your growth.</p>
+      <ul class="bens">
+        <li>True wholesale pricing, high margins</li>
+        <li>New designs updated regularly</li>
+        <li>Set-based bulk buying with clear per-piece rates</li>
+        <li>Fast dispatch &amp; all-India delivery</li>
+        <li>Worldwide export orders accepted</li>
+        <li>COD &amp; secure payment options</li>
+      </ul>
+      <div class="hcta">
+        <a class="btn b-gold" href="#">Register as Buyer</a>
+        <a class="btn b-wa" href="https://wa.me/919979630465?text=Hello%20M.R.%20Saree%20Emporium%2C%20I%20want%20to%20start%20my%20own%20textile%20business.%20Please%20guide%20me." target="_blank" rel="noopener">Talk to Our Experts</a>
+      </div>
+      <p style="font-size:.75rem;color:rgba(251,247,239,.55);margin-top:1rem">Expert desk: 10 AM – 7 PM · Tel 0261-2313319 · +91 97272 36377 · +91 99796 30465</p>
+    </div>
+    <div class="reveal">
+      <h3 class="serif" style="color:var(--gold-2);font-size:1.4rem;margin-bottom:.5rem">How Wholesale Ordering Works</h3>
+      <ol class="steps">
+        <li><div><b>Create Your Buyer Account</b><i>Register with your business details</i></div></li>
+        <li><div><b>Browse the Live Catalogue</b><i>Daily-updated designs, set-wise pricing</i></div></li>
+        <li><div><b>Add Sets to Cart</b><i>Clear per-piece rates on every set</i></div></li>
+        <li><div><b>Confirm on WhatsApp or Checkout</b><i>Order the way you prefer</i></div></li>
+        <li><div><b>Secure Payment / COD</b><i>GST invoice with every order</i></div></li>
+        <li><div><b>Dispatch in 2–3 Days</b><i>Tracking shared within 3 days</i></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- stats -->
+<section class="stats reveal">
+  <div class="wrap">
+    <div><b data-n="60">0<em>+</em></b><i>Years in Wholesale</i></div>
+    <div><b data-n="5">0</b><i>Branches Across India</i></div>
+    <div><b data-n="50">0<em>K+</em></b><i>Trusted Retailers</i></div>
+    <div><b data-n="26">0<em>+</em></b><i>In-House &amp; Partner Brands</i></div>
+  </div>
+</section>
+
+<!-- branches -->
+<section class="sec" id="branches">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Visit Us</span><h2>Five Stores. One Standard.</h2></div>
+    </div>
+    <div class="branches reveal">
+      <div class="br"><span class="hq">HQ</span><h3>Surat</h3><p>D-Block, 248–283, Lower Ground, Kohinoor Textile Market, Kamela Darwaja, Ring Road, Surat-395002</p><a href="https://www.google.com/maps/search/?api=1&query=M.R+Saree+Emporium+Kohinoor+Textile+Market+Surat" target="_blank" rel="noopener">Directions</a></div>
+      <div class="br"><h3>Varanasi</h3><p>Branch store — full range available</p><a href="tel:+919979630465">Call Store</a></div>
+      <div class="br"><h3>Kolkata</h3><p>Branch store — full range available</p><a href="tel:+919979630465">Call Store</a></div>
+      <div class="br"><h3>Ranchi</h3><p>Branch store — full range available</p><a href="tel:+919979630465">Call Store</a></div>
+      <div class="br"><h3>Raipur</h3><p>Branch store — full range available</p><a href="tel:+919979630465">Call Store</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- brands -->
+<div class="bmq" aria-hidden="true"><div class="bmq-track" id="bmq"></div></div>
+
+<!-- story -->
+<section class="sec" id="story">
+  <div class="wrap story">
+    <div class="vis reveal"><img loading="lazy" src="https://mrse.in/cdn/shop/files/kimora-sindhuri-maharani-pure-soft-dola-silk-saree_Mrse_05_800x.jpg?v=1783333561" alt="Premium silk saree from the M.R. collection"></div>
+    <div class="reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>Six Decades of Quality, Range &amp; Relationships</h2>
+      <p>What began in Surat's textile trade over sixty years ago is today a five-city wholesale house serving generations of families and thousands of retail businesses. The principles haven't changed: honest pricing, dependable quality, and a range wide enough that every shelf finds something that sells.</p>
+      <p>From everyday cotton sarees to bridal silk, from kurtis to home furnishing — every product is selected to the same standard, because when our partners grow, we grow.</p>
+      <div class="sig">— M.R. Saree Emporium · A unit of M.R. Manokamna Pvt Ltd</div>
+      <a class="btn b-line-d" href="#b2b">Partner With Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- testimonials -->
+<section class="sec" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><span class="eyebrow">Retailer Voices</span><h2>Why Retailers Restock With Us</h2></div></div>
+    <div class="tst reveal">
+      <div class="t"><div class="st">★★★★★</div><p>Sample testimonial — swap in a real retailer review about designs and sell-through.</p><i>Retail Partner · Sample</i></div>
+      <div class="t"><div class="st">★★★★★</div><p>Sample testimonial — swap in a real review about margins and repeat ordering.</p><i>Boutique Owner · Sample</i></div>
+      <div class="t"><div class="st">★★★★★</div><p>Sample testimonial — swap in a real review about quality and dispatch speed.</p><i>Reseller · Sample</i></div>
+    </div>
+  </div>
+</section>
+
+<!-- newsletter -->
+<section class="news sec">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="color:var(--gold-2)">Daily New Designs</span>
+    <h2>Get the Latest Catalogue First</h2>
+    <p>New sets drop regularly. Join the WhatsApp list and never miss a fast-selling design.</p>
+    <form class="nf" onsubmit="event.preventDefault();toast('Demo form — connects to backend in production')">
+      <input type="tel" inputmode="tel" placeholder="Your WhatsApp number" aria-label="WhatsApp number" required>
+      <button class="btn b-gold" type="submit">Join the List</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fg">
+    <div class="fbrand">
+      <img src="https://mrse.in/cdn/shop/files/logo_165x.png?v=1733138699" alt="M.R. Saree Emporium">
+      <p>India's wholesale textile house since 60+ years. A unit of M.R. Manokamna Pvt Ltd.</p>
+    </div>
+    <div><h4>Shop</h4><a href="#shop">Sarees</a><a href="#shop">Dress &amp; Kurtis</a><a href="#shop">Men</a><a href="#shop">Home Furnishing</a><a href="#shop">Accessories</a></div>
+    <div><h4>Wholesale</h4><a href="#b2b">Start Your Business</a><a href="#b2b">How It Works</a><a href="#shop">Latest Launches</a><a href="#branches">Store Locations</a></div>
+    <div><h4>Company</h4><a href="#story">About Us</a><a href="#">FAQs</a><a href="#">Delivery Information</a><a href="#">Return &amp; Exchange</a><a href="#">Privacy · Terms</a></div>
+    <div><h4>Contact</h4>
+      <p style="color:rgba(251,247,239,.6);line-height:1.8">D-Block, 248–283, Lower Ground,<br>Kohinoor Textile Market, Kamela Darwaja,<br>Ring Road, Surat-395002, Gujarat<br>☎ 0261-2313319 · +91 99796 30465<br>10 AM – 7 PM</p>
+      <div style="display:flex;gap:.9rem;margin-top:.8rem">
+        <a href="https://www.facebook.com/mrsareeemp/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/mrsareeemporium/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/channel/UCE9XwNT2FgpEA9UccbA29Tg" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap fbot">
+    <span>© 2026 M.R. Saree Emporium · M.R. Manokamna Pvt Ltd. All rights reserved.</span>
+    <span>Design concept — demo with sample catalogue data</span>
+  </div>
+</footer>
+
+<!-- cart drawer -->
+<div class="scrim" id="scrim" onclick="closeAll()"></div>
+<aside class="drawer" id="cartD" aria-label="Cart">
+  <div class="dh"><h3>Your Sets</h3><button class="x" onclick="closeAll()">×</button></div>
+  <div class="dbody" id="cartBody"></div>
+  <div class="dfoot" id="cartFoot"></div>
+</aside>
+
+<!-- quick view -->
+<div class="qvm" id="qvm" onclick="if(event.target===this)closeAll()">
+  <div class="qvc" role="dialog" aria-label="Product quick view">
+    <button class="x" onclick="closeAll()">×</button>
+    <div class="qgal"><div class="main"><img id="qvImg" src="" alt=""></div><div class="thumbs" id="qvThumbs"></div></div>
+    <div class="qinfo" id="qvInfo"></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<a class="waf" href="https://wa.me/919979630465?text=Hello%20M.R.%20Saree%20Emporium%2C%20please%20share%20your%20latest%20wholesale%20catalogue." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c2 1.1 4.1 1.6 6.3 1.6 6.6 0 12-5.3 12-11.9C29.6 8.3 22.6 3 16 3zm6.6 16.9c-.3.8-1.6 1.5-2.3 1.6-.6.1-1.3.2-3.8-.8-3.2-1.3-5.3-4.6-5.5-4.8-.2-.2-1.3-1.8-1.3-3.4s.8-2.4 1.1-2.7c.3-.3.6-.4.9-.4h.6c.2 0 .5-.1.7.5s.9 2.2 1 2.4c.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8s1 1.7 2.2 2.7c1.5 1.3 2.7 1.7 3.1 1.9.4.2.6.2.8-.1.2-.2 1-1.1 1.2-1.5.2-.4.5-.3.8-.2.3.1 2 .9 2.3 1.1.3.2.6.3.6.4.1.2.1.9-.2 1.6z"/></svg>
+</a>
+
+<nav class="mbar" aria-label="Quick actions">
+  <a href="tel:+919979630465"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call</a>
+  <a href="https://wa.me/919979630465" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.6 13.8L3 21l4.4-1.3A9 9 0 1 0 12 3z"/></svg>WhatsApp</a>
+  <button onclick="openSearch()"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search</button>
+  <button class="c" onclick="openCart()"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Cart</button>
+</nav>
+
+<script>
+/* ---------- real catalogue data (from mrse.in) ---------- */
+const F="https://mrse.in/cdn/shop/files/";
+const BV="?v=1784201974", KV="?v=1783333561", UV="?v=1781333926";
+const B=n=>F+"BandhaniLeheriyaStripePrintChiffonSareewithDesignerLaceBorderandRunningBlouse-6PcsSet_Mrse_"+n+BV;
+const K=(n,v)=>F+"kimora-sindhuri-maharani-pure-soft-dola-silk-saree_Mrse_"+n+"_800x.jpg"+(v||KV);
+const U=(n,v)=>F+"cotton-short-kurti-style-vol-10_Mrse_"+n+"_800x.jpg"+(v||UV);
+const bimg={
+ "01":B("01_aaf70426-b42e-4309-9387-e6ba7350942d_800x.png"),
+ "02":B("02_9e72afc6-97c9-4a23-8561-294885b4aba7_800x.png"),
+ "03":B("03_695c594f-755c-406f-b55a-8be4486c7892_800x.png"),
+ "04":B("04_07f60c6f-b133-4e32-aa48-64ee1562019b_800x.png"),
+ "05":B("05_20deba09-11a4-4940-8b77-402f8a87e0ea_800x.png"),
+ "06":B("06_800x.png"),
+ "07":B("07_800x.jpg")};
+const PRODUCTS=[
+ {id:"bnd1",name:"Bandhani Chiffon Saree — Leheriya Stripe",brand:"Ek Stree",cat:"bandhani",pcs:6,set:2130,imgs:[bimg["01"],bimg["02"],bimg["03"]],fab:"Chiffon",blouse:"Running Blouse Piece",occ:"Festive · Party · Daily"},
+ {id:"bnd2",name:"Bandhani Chiffon Saree — Leheriya Print",brand:"Ek Stree",cat:"bandhani",pcs:6,set:4380,imgs:[bimg["04"],bimg["05"],bimg["01"]],fab:"Chiffon",blouse:"Running Blouse Piece",occ:"Festive · Party Wear"},
+ {id:"bnd3",name:"Bandhani Chiffon Saree — Traditional Designer",brand:"Ek Stree",cat:"bandhani",pcs:6,set:2130,imgs:[bimg["05"],bimg["06"],bimg["02"]],fab:"Chiffon",blouse:"Running Blouse Piece",occ:"Traditional · Daily Wear"},
+ {id:"bnd4",name:"Bandhani Chiffon Saree — Zig Zag Designer",brand:"Ek Stree",cat:"bandhani",pcs:6,set:2640,imgs:[bimg["07"],bimg["03"],bimg["06"]],fab:"Chiffon",blouse:"Running Blouse Piece",occ:"Festive · Party Wear"},
+ {id:"kim1",name:"Kimora Sindhuri Maharani — Pure Soft Dola Silk",brand:"RajYog · Kimora",cat:"silk",pcs:4,set:12060,imgs:[K("01"),K("02","?v=1783333562"),K("03"),K("04"),K("05"),K("06")],fab:"Pure Soft Dola Silk",blouse:"Heavy Embroidered Designer Blouse",occ:"Wedding · Reception · Festive"},
+ {id:"kur1",name:"STYLE VOL 10 — Cotton Short Kurti Top",brand:"M.R.",cat:"kurti",pcs:4,set:720,imgs:[U("01"),U("02","?v=1781333927"),U("03","?v=1781333927"),U("04"),U("05")],fab:"Cotton",blouse:"Sizes M–3XL",occ:"Casual · Daily · Office"}
+];
+const BRANDS=["Ek Stree","Laxmipati","Kayaan Print","Palav Fabrics","Subhash Sarees","Vallabhi Prints","Krishnaleela","RajYog Fabrics","Kimora","TFH","Rajpath","Ruchi Saree","Sagun Saree","B Vijay Co","M.R. Silk","M.R. Cotton"];
+const WA="919979630465";
+const fmt=n=>"₹ "+n.toLocaleString("en-IN");
+
+/* ---------- state ---------- */
+let cart=[],wish=new Set(),filter="all";
+
+/* ---------- ticker & brands ---------- */
+const tickTxt='<span>India\u2019s Biggest Wholesaler</span><span>Stores in Surat \u00b7 Varanasi \u00b7 Kolkata \u00b7 Ranchi \u00b7 Raipur</span><span>Worldwide Export</span><span>New Designs Daily</span>';
+document.getElementById("tick").innerHTML=tickTxt+tickTxt;
+const bTxt=BRANDS.map(b=>"<span>"+b+"</span>").join("");
+document.getElementById("bmq").innerHTML=bTxt+bTxt;
+
+/* ---------- grid ---------- */
+function heartSvg(){return '<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.8-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 4.5 2.5C12 6 13.5 5 15.5 5 19 5 21 8.5 20.5 12c-2 4.2-8.5 9-8.5 9z"/></svg>'}
+function renderGrid(){
+ const sort=document.getElementById("sort").value;
+ let list=PRODUCTS.filter(p=>filter==="all"||p.cat===filter||(filter==="saree"&&(p.cat==="bandhani"||p.cat==="silk")));
+ if(sort==="lo")list=[...list].sort((a,b)=>a.set-b.set);
+ if(sort==="hi")list=[...list].sort((a,b)=>b.set-a.set);
+ document.getElementById("grid").innerHTML=list.map(p=>`
+  <article class="card">
+   <div class="ph" onclick="quickView('${p.id}')">
+    <img loading="lazy" src="${p.imgs[0]}" alt="${p.name}">
+    <img loading="lazy" class="b" src="${p.imgs[1]}" alt="">
+    <span class="brand">${p.brand}</span>
+    <button class="heart ${wish.has(p.id)?"on":""}" aria-label="Wishlist" onclick="event.stopPropagation();toggleWish('${p.id}',this)">${heartSvg()}</button>
+    <span class="qv">Quick View</span>
+   </div>
+   <div class="bd">
+    <span class="set">${p.pcs} Pcs Wholesale Set</span>
+    <h3 onclick="quickView('${p.id}')">${p.name}</h3>
+    <div class="pr"><b>${fmt(p.set)}</b><i>· ${fmt(Math.round(p.set/p.pcs))} / pc</i></div>
+    <div class="act">
+     <button class="btn b-wine" onclick="addToCart('${p.id}')">Add Set</button>
+     <a class="btn b-wa" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${enq(p)}">Enquire</a>
+    </div>
+   </div>
+  </article>`).join("");
+}
+function enq(p){return encodeURIComponent("Hello M.R. Saree Emporium,\nI\u2019m interested in:\nProduct: "+p.name+"\nBrand: "+p.brand+"\nSet: "+p.pcs+" pcs \u2014 "+fmt(p.set)+"\nPlease share availability and dispatch time.")}
+function setFilter(f){filter=f;const has=!!document.querySelector('.chip[data-f="'+f+'"]');document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",has?c.dataset.f===f:c.dataset.f==="all"));renderGrid()}
+function toggleWish(id,el){wish.has(id)?wish.delete(id):wish.add(id);el.classList.toggle("on");const pip=document.getElementById("wishPip");pip.hidden=!wish.size;pip.textContent=wish.size;toast(wish.has(id)?"Added to wishlist":"Removed from wishlist")}
+
+/* ---------- cart ---------- */
+function addToCart(id,qty=1){const it=cart.find(c=>c.id===id);it?it.q+=qty:cart.push({id,q:qty});syncCart();toast("Set added to cart");openCart()}
+function chQty(id,d){const it=cart.find(c=>c.id===id);if(!it)return;it.q+=d;if(it.q<1)cart=cart.filter(c=>c.id!==id);syncCart()}
+function rmItem(id){cart=cart.filter(c=>c.id!==id);syncCart()}
+function cartTotal(){return cart.reduce((s,c)=>s+PRODUCTS.find(p=>p.id===c.id).set*c.q,0)}
+function syncCart(){
+ const pip=document.getElementById("cartPip"),n=cart.reduce((s,c)=>s+c.q,0);
+ pip.hidden=!n;pip.textContent=n;
+ const body=document.getElementById("cartBody"),foot=document.getElementById("cartFoot");
+ if(!cart.length){body.innerHTML='<div class="dempty">Your cart is empty.<br>Add wholesale sets from the catalogue.</div>';foot.innerHTML="";return}
+ body.innerHTML=cart.map(c=>{const p=PRODUCTS.find(x=>x.id===c.id);return `
+  <div class="ci">
+   <img src="${p.imgs[0]}" alt="">
+   <div>
+    <div class="n">${p.name}</div>
+    <div class="s">${p.pcs} pcs / set · ${fmt(Math.round(p.set/p.pcs))} per pc</div>
+    <div class="p">${fmt(p.set*c.q)}</div>
+    <div class="qty"><button onclick="chQty('${p.id}',-1)">−</button><b>${c.q}</b><button onclick="chQty('${p.id}',1)">+</button><span style="font-size:.66rem;color:var(--mut);padding:0 .5rem">set(s)</span></div>
+   </div>
+   <button class="rm" onclick="rmItem('${p.id}')">Remove</button>
+  </div>`}).join("");
+ foot.innerHTML=`
+  <div class="tot"><span>Total (${cart.reduce((s,c)=>s+c.q*PRODUCTS.find(p=>p.id===c.id).pcs,0)} pcs)</span><b>${fmt(cartTotal())}</b></div>
+  <a class="btn b-wa" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${orderMsg()}">Place Order on WhatsApp</a>
+  <button class="btn b-line-d" onclick="toast('Checkout connects to Razorpay in production')">Secure Checkout</button>
+  <span style="font-size:.68rem;color:var(--mut);text-align:center">Shipping charge extra · GST invoice provided · Dispatch in 2–3 working days</span>`;
+}
+function orderMsg(){
+ let m="Hello M.R. Saree Emporium, I\u2019d like to order:\n";
+ cart.forEach(c=>{const p=PRODUCTS.find(x=>x.id===c.id);m+="\u2022 "+c.q+" set(s) \u2014 "+p.name+" ("+p.pcs+" pcs/set) \u2014 "+fmt(p.set*c.q)+"\n"});
+ m+="Total: "+fmt(cartTotal())+"\nPlease confirm availability and payment details.";
+ return encodeURIComponent(m);
+}
+
+/* ---------- quick view ---------- */
+let qvId=null;
+function quickView(id){
+ const p=PRODUCTS.find(x=>x.id===id);qvId=id;
+ document.getElementById("qvImg").src=p.imgs[0];
+ document.getElementById("qvImg").alt=p.name;
+ document.getElementById("qvThumbs").innerHTML=p.imgs.map((s,i)=>`<img src="${s}" alt="" class="${i===0?"on":""}" onclick="qvPick(this,'${s}')">`).join("");
+ document.getElementById("qvInfo").innerHTML=`
+  <span class="eyebrow">${p.brand} · ${p.pcs} Pcs Wholesale Set</span>
+  <h3>${p.name}</h3>
+  <div class="pr">${fmt(p.set)} <i>· ${fmt(Math.round(p.set/p.pcs))} per piece</i></div>
+  <div class="spec">
+   <div><b>Fabric</b><span>${p.fab}</span></div>
+   <div><b>Blouse / Fit</b><span>${p.blouse}</span></div>
+   <div><b>Occasion</b><span>${p.occ}</span></div>
+   <div><b>Dispatch</b><span>2–3 working days · tracking shared</span></div>
+  </div>
+  <div class="qact">
+   <button class="btn b-wine" onclick="addToCart('${p.id}');closeQV()">Add Set to Cart</button>
+   <a class="btn b-wa" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${enq(p)}">Enquire on WhatsApp</a>
+  </div>
+  <p class="qnote">MRP inclusive of taxes · Shipping charge extra · Returns accepted for damaged/incorrect items reported within 3 days.</p>`;
+ document.getElementById("qvm").classList.add("on");
+ document.getElementById("scrim").classList.add("on");
+ document.body.style.overflow="hidden";
+}
+function qvPick(el,src){document.getElementById("qvImg").src=src;document.querySelectorAll("#qvThumbs img").forEach(t=>t.classList.remove("on"));el.classList.add("on")}
+function closeQV(){document.getElementById("qvm").classList.remove("on")}
+
+/* ---------- search ---------- */
+function openSearch(){document.getElementById("sov").classList.add("open");setTimeout(()=>document.getElementById("sin").focus(),50);doSearch("")}
+function closeSearch(){document.getElementById("sov").classList.remove("open")}
+function doSearch(q){
+ q=q.trim().toLowerCase();
+ const hits=PRODUCTS.filter(p=>!q||p.name.toLowerCase().includes(q)||p.brand.toLowerCase().includes(q)||p.cat.includes(q)||p.fab.toLowerCase().includes(q));
+ document.getElementById("sres").innerHTML=hits.length?hits.map(p=>`
+  <a href="#shop" onclick="closeSearch();quickView('${p.id}')">
+   <img src="${p.imgs[0]}" alt=""><div><div class="nm">${p.name}</div><div class="pr">${p.brand} · ${p.pcs} pcs — ${fmt(p.set)}</div></div>
+  </a>`).join(""):'<div class="empty">No matches — try "bandhani", "silk", "kurti" or a brand name.</div>';
+}
+
+/* ---------- drawers ---------- */
+function openCart(){syncCart();document.getElementById("cartD").classList.add("on");document.getElementById("scrim").classList.add("on");document.body.style.overflow="hidden"}
+function closeAll(){["cartD"].forEach(i=>document.getElementById(i).classList.remove("on"));closeQV();document.getElementById("scrim").classList.remove("on");document.body.style.overflow=""}
+function mnav(o){const m=document.getElementById("mnav");m.classList.toggle("on",o);m.setAttribute("aria-hidden",String(!o));document.body.style.overflow=o?"hidden":""}
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeAll();closeSearch();mnav(false)}});
+
+/* ---------- toast ---------- */
+function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.getElementById("toasts").appendChild(t);setTimeout(()=>t.remove(),2400)}
+
+/* ---------- reveal + counters ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+const red=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+ if(!e.isIntersecting)return;const el=e.target,n=+el.dataset.n;cio.unobserve(el);
+ if(red){el.firstChild.textContent=n;return}
+ let st=null;const tk=t=>{if(!st)st=t;const p=Math.min((t-st)/1300,1);el.firstChild.textContent=Math.floor(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tk)};requestAnimationFrame(tk);
+}),{threshold:.6});
+document.querySelectorAll("[data-n]").forEach(el=>cio.observe(el));
+
+renderGrid();
+</script>
+</body>
+</html>
